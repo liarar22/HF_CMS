@@ -5,33 +5,52 @@
     <meta charset = "utf-8">
     <meta meta name = “viewport” content = “width = device - width, initial scale = 1.0” >
     <style>
-    header{
-        border-bottom:1px solid gray;
-        padding-left: 20px;
-        text-align: center;
-    }
-    .container {
-        display: flex;
-        flex-direction: row;
-        border-bottom:1px solid gray;
-    }
-    .item{
-        padding-left: 580px;
-    }
+        .container {
+            display: grid;
+            grid-template-rows: 500px 500px;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .wbs {
+            margin: 5%;
+            border-style:solid;
+            text-align: center;
+        }
+
+        .duration {
+            margin: 5%;
+            border-style:solid;
+            text-align: center;
+        }
+
+        .wbs1 {
+            margin: 5%;
+            border-style:solid;
+        }
+
+        .data {
+            margin: 5%;
+            border-style:solid;
+        }
+
     </style>
 </head>
 
 <body>
-    <header>
-        <h1>HF</h1>
-    </header>
-
-    <main>
-        <div class = "container">
-            <div class="item"> <ul>ㅇㅇ</ul> </div>
-            <div class="item"> <ul>ㅇㅇ</ul> </div>
+    <div class="container">
+        <div class="wbs">
+            현재 진척율<br>
+            <div class="wbs_0" style="color:red">ㅇㅇ%</div>
         </div>
-    </main>
+        <div class="duration"> 
+            남은 기한<br>
+            <div class="wbs_0" style="color:red">xx day</div>
+        </div>
+           
+        <div class="wbs1">WBS</div>
+        
+        <div class="data">산출물</div>
+</div>
     
 </body>
 

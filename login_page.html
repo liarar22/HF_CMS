@@ -5,28 +5,30 @@
     <meta charset = "utf-8">
     <meta meta name = “viewport” content = “width = device - width, initial scale = 1.0” >
     <style>
+    body {
+        background-image: url('C:/Users/cjswh/Desktop/HF_CMS/images/HF_Background.jpg');
+    }
+
     .container {
-        display: flex;
-        justify-content: center; 
+        margin-top: 15%;
+        text-align: center;
+        color: white;
     }
-    .form01 {
-        margin-top: 250px;
-        display: block;
-    }
+    
     </style>
 </head>
 
 <body>
-    <div class = "container">
 
+    <div class = "container">
         <form class = "form01">
-            <div class = "item"> <input type = "text"> </div>
-            <br>
-            <div class = "item"> <input type = "password"> </div>
-            <br>
-            <div class = "item"> <input type = "submit"> </div>
+            <fieldset style = "width:5; height: 5;">
+                <legend>개인정보입력</legend>
+                    이름 : <input type = "text"><br><br>
+                    비밀번호 :<input type = "password" title="****"><br><br>
+                    <input type = "submit"> 
+            </fieldset>
         </form>
-  
     </div>
    
 </body>
