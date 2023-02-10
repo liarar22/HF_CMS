@@ -11,22 +11,21 @@
 
     .container {
         margin-top: 15%;
+        margin-left: 35%;
         text-align: center;
         color: white;
     }
-    
     </style>
 </head>
 
 <body>
-
+    
     <div class = "container">
-        <form class = "form01">
-            <fieldset style = "width:5; height: 5;">
-                <legend>개인정보입력</legend>
-                    이름 : <input type = "text"><br><br>
-                    비밀번호 :<input type = "password" title="****"><br><br>
-                    <input type = "submit"> 
+        <form class = "login_box" method="post">
+            <fieldset style = "width:450px; height: 150px;">
+                <div class = "id">아이디 : <input type = "text" name = "Name" placeholder = "아이디를 입력하세요"><br><br></div>
+                <div class = "pw">비밀번호 : <input type = "password" name = "Pass" placeholder = "비밀번호를 입력하세요"><br><br></div>
+                <div class = "sub"><input type = "submit" name = "Check" value = "Enter"></div>
             </fieldset>
         </form>
     </div>
