@@ -1,9 +1,7 @@
 # extension에서 flask 설치하고, terminal에 pip install flask
 # 로그인 정보 db 연동을 위해 terminal에 pip install flask-mysqldb
-# https://streamls.tistory.com/entry/Flask%EA%B0%95%EC%A2%8C-%EB%A1%9C%EA%B7%B8%EC%9D%B8_로그인 방법 관련해서 이걸 챙겨보자
-from flask import Flask, render_template, routes
-from app001 import routes
-
+# https://streamls.tistory.com/entry/Flask%EA%B0%95%EC%A2%8C-%EB%A1%9C%EA%B7%B8%EC%9D%B8 : 로그인 방법 관련해서 이걸 챙겨보자
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
